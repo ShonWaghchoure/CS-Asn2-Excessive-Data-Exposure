@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice.johnson@company.demo",
+    "role": "Senior Developer",
+    "department": "Engineering",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alice",
+    "created_at": "2023-01-15T09:30:00Z",
+    "internal_notes": "Candidate for promotion to Tech Lead in Q3. Currently mentoring 3 junior developers.",
+    "security_clearance": "LEVEL_3_CONFIDENTIAL",
+    "last_password_change": "2024-01-20T14:22:00Z",
+    "api_keys": [
+      "sk_live_demo_abc123def456",
+      "sk_test_demo_xyz789uvw012"
+    ],
+    "admin_flags": {
+      "can_access_billing": true,
+      "can_manage_users": true,
+      "can_view_audit_logs": true,
+      "bypass_2fa": false
+    },
+    "salary_band": "L6",
+    "performance_review_score": 4.7,
+    "ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDemoKeyAlice...",
+    "two_factor_secret": "JBSWY3DPEHPK3PXP"
+  },
+  {
+    "id": 2,
+    "name": "Bob Chen",
+    "email": "bob.chen@company.demo",
+    "role": "Product Manager",
+    "department": "Product",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=bob",
+    "created_at": "2023-03-22T11:00:00Z",
+    "internal_notes": "Previously at competitor startup. Strong relationships with key enterprise clients. Flight risk - monitor engagement.",
+    "security_clearance": "LEVEL_2_INTERNAL",
+    "last_password_change": "2024-02-10T08:15:00Z",
+    "api_keys": [
+      "sk_live_demo_pqr345stu678"
+    ],
+    "admin_flags": {
+      "can_access_billing": false,
+      "can_manage_users": false,
+      "can_view_audit_logs": true,
+      "bypass_2fa": false
+    },
+    "salary_band": "L5",
+    "performance_review_score": 4.2,
+    "ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDemoKeyBob...",
+    "two_factor_secret": "K3PXPJBSWY3DPEHP"
+  },
+  {
+    "id": 3,
+    "name": "Carol Martinez",
+    "email": "carol.martinez@company.demo",
+    "role": "UX Designer",
+    "department": "Design",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=carol",
+    "created_at": "2023-06-10T10:45:00Z",
+    "internal_notes": "Leading design system v2 initiative. Excellent collaboration with engineering. Requested transfer to Design Ops team.",
+    "security_clearance": "LEVEL_1_PUBLIC",
+    "last_password_change": "2024-01-05T16:30:00Z",
+    "api_keys": [
+      "sk_test_demo_vwx901yza234"
+    ],
+    "admin_flags": {
+      "can_access_billing": false,
+      "can_manage_users": false,
+      "can_view_audit_logs": false,
+      "bypass_2fa": false
+    },
+    "salary_band": "L4",
+    "performance_review_score": 4.5,
+    "ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDemoKeyCarol...",
+    "two_factor_secret": "PEHPK3PXPJBSWY3D"
+  },
+  {
+    "id": 4,
+    "name": "David Park",
+    "email": "david.park@company.demo",
+    "role": "DevOps Engineer",
+    "department": "Engineering",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=david",
+    "created_at": "2022-11-01T13:20:00Z",
+    "internal_notes": "Holds root access to production Kubernetes clusters. On-call primary for incident response. Recently completed AWS Solutions Architect cert.",
+    "security_clearance": "LEVEL_4_RESTRICTED",
+    "last_password_change": "2024-02-28T11:00:00Z",
+    "api_keys": [
+      "sk_live_demo_ghi789jkl012",
+      "sk_live_demo_mno345pqr678",
+      "sk_test_demo_stu901vwx234"
+    ],
+    "admin_flags": {
+      "can_access_billing": true,
+      "can_manage_users": true,
+      "can_view_audit_logs": true,
+      "bypass_2fa": true
+    },
+    "salary_band": "L6",
+    "performance_review_score": 4.8,
+    "ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDemoKeyDavid...",
+    "two_factor_secret": "WY3DPEHPK3PXPJBS"
+  },
+  {
+    "id": 5,
+    "name": "Eva Rodriguez",
+    "email": "eva.rodriguez@company.demo",
+    "role": "QA Engineer",
+    "department": "Engineering",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=eva",
+    "created_at": "2024-02-14T09:00:00Z",
+    "internal_notes": "New hire - 90 day review pending. Strong automation background. Building new e2e test framework with Playwright.",
+    "security_clearance": "LEVEL_1_PUBLIC",
+    "last_password_change": "2024-02-14T09:00:00Z",
+    "api_keys": [],
+    "admin_flags": {
+      "can_access_billing": false,
+      "can_manage_users": false,
+      "can_view_audit_logs": false,
+      "bypass_2fa": false
+    },
+    "salary_band": "L3",
+    "performance_review_score": null,
+    "ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDemoKeyEva...",
+    "two_factor_secret": "3DPEHPK3PXPJBSWY"
+  }
+]

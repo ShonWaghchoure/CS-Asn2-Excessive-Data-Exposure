@@ -1,0 +1,365 @@
+/* Excessive Data Exposure Demo - Frontend Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+
+header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.version-toggle {
+    display: flex;
+    gap: 16px;
+    background: #f0f2f5;
+    padding: 8px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.version-toggle label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.version-toggle label:hover {
+    background: #e4e6eb;
+}
+
+.version-toggle input[type="radio"] {
+    accent-color: #2563eb;
+}
+
+.version-toggle span {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#versionV1:checked + span {
+    color: #dc2626;
+}
+
+#versionV2:checked + span {
+    color: #16a34a;
+}
+
+/* Sections */
+section {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+
+section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eef0f3;
+}
+
+/* User Grid */
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.user-card {
+    background: #fafbfc;
+    border: 1px solid #eef0f3;
+    border-radius: 10px;
+    padding: 16px;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
+
+.user-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    border-color: #d0d5dd;
+}
+
+.user-card .avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 2px solid #eef0f3;
+}
+
+.user-card .name {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+
+.user-card .email {
+    font-size: 0.85rem;
+    color: #667085;
+    margin-bottom: 8px;
+}
+
+.user-card .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.user-card .badge {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.badge-role {
+    background: #eef2ff;
+    color: #3730a3;
+}
+
+.badge-dept {
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #667085;
+}
+
+/* Detail View */
+.back-btn {
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 0;
+    margin-bottom: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+.detail-card {
+    background: #fafbfc;
+    border: 1px solid #eef0f3;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.detail-card .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 3px solid #eef0f3;
+}
+
+.detail-card .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+
+.detail-card .email {
+    font-size: 1rem;
+    color: #667085;
+    margin-bottom: 16px;
+}
+
+.detail-card .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.detail-card .badge {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+}
+
+.detail-card .field {
+    margin-bottom: 12px;
+}
+
+.detail-card .field-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #667085;
+    margin-bottom: 4px;
+}
+
+.detail-card .field-value {
+    font-size: 0.95rem;
+    color: #1a1a2e;
+}
+
+/* API Inspector */
+.api-inspector {
+    background: #1a1a2e;
+    border-radius: 10px;
+    padding: 20px;
+    color: #e4e7ec;
+}
+
+.api-inspector h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.api-inspector p {
+    font-size: 0.85rem;
+    color: #9aa4b2;
+    margin-bottom: 16px;
+}
+
+.inspect-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.inspect-btn:hover {
+    background: #1d4ed8;
+}
+
+.raw-response {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+    overflow-x: auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.raw-response .key {
+    color: #79c0ff;
+}
+
+.raw-response .string {
+    color: #a5d6ff;
+}
+
+.raw-response .number {
+    color: #7ee787;
+}
+
+.raw-response .boolean {
+    color: #ffa657;
+}
+
+.raw-response .null {
+    color: #8b949e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #667085;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer strong {
+    color: #dc2626;
+}
+
+footer em {
+    color: #3730a3;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .container {
+        padding: 12px;
+    }
+    
+    .user-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .version-toggle {
+        flex-direction: column;
+        width: 100%;
+    }
+}

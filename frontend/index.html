@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory - Excessive Data Exposure Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏢 Employee Directory</h1>
+            <p class="subtitle">Internal Company Directory - Demo Application</p>
+            <div class="version-toggle">
+                <label>
+                    <input type="radio" name="apiVersion" value="v1" id="versionV1" checked>
+                    <span>Vulnerable (v1)</span>
+                </label>
+                <label>
+                    <input type="radio" name="apiVersion" value="v2" id="versionV2">
+                    <span>Fixed (v2)</span>
+                </label>
+            </div>
+        </header>
+
+        <main>
+            <section class="user-list-section">
+                <h2>All Employees</h2>
+                <div id="userList" class="user-grid">
+                    <div class="loading">Loading employees...</div>
+                </div>
+            </section>
+
+            <section class="user-detail-section" id="userDetail" style="display: none;">
+                <button class="back-btn" onclick="showUserList()">← Back to List</button>
+                <div class="user-card detail-card" id="detailCard">
+                    <!-- Populated by JavaScript -->
+                </div>
+                <div class="api-inspector">
+                    <h3>🔍 API Response Inspector</h3>
+                    <p>Open browser DevTools (F12) → Network tab to see the raw API response</p>
+                    <button class="inspect-btn" onclick="inspectRawResponse()">Show Raw JSON Response</button>
+                    <pre id="rawResponse" class="raw-response" style="display: none;"></pre>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>⚠️ DEMO APPLICATION</strong> - This intentionally demonstrates the <em>Excessive Data Exposure via API</em> vulnerability.</p>
+            <p>Switch between <strong>Vulnerable (v1)</strong> and <strong>Fixed (v2)</strong> modes to see the difference.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
