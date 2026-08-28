@@ -315,5 +315,3 @@ See **[DEMO_SCRIPT.md](DEMO_SCRIPT.md)** for detailed narration, timing, and ste
 - [PortSwigger - Excessive Data Exposure](https://portswigger.net/web-security/api-testing/excessive-data-exposure)
 
 ---
-
-**Built for cybersecurity education - demonstrating API3:2019 Excessive Data Exposure**
