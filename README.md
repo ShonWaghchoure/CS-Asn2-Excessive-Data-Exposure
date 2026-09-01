@@ -253,20 +253,6 @@ function getUserFixed(req, res) {
   "created_at": "2023-01-15T09:30:00Z"
 }
 ```
-
-## 🎬 Video Demonstration Placeholder
-
-### Video Link
-**[INSERT YOUTUBE/GOOGLE DRIVE LINK HERE AFTER RECORDING]**
-
-### Video Structure (Under 10 Minutes)
-
-| Part | Title | Duration | Content |
-|------|-------|----------|---------|
-| **A** | Normal Application | ~2 min | Show app working normally, click users, show UI |
-| **B** | Live Attack | ~3 min | DevTools Network tab, show raw response, highlight secrets |
-| **C** | Explanation & Fix | ~4 min | Explain vulnerability, show code diff, demo fixed version |
-
 ## 📦 Project Structure
 
 ```
@@ -288,28 +274,6 @@ excessive-data-exposure-demo/
 ├── README.md                     # This file
 └── DEMO_SCRIPT.md                # Video narration script
 ```
-
-## ✅ GitHub Upload Checklist
-
-- [ ] Create repository in GitHub Classroom
-- [ ] Push complete project (excluding `node_modules/`)
-- [ ] Add `.gitignore` with `node_modules/`, `.env`, `*.log`
-- [ ] Verify README renders correctly
-- [ ] Test fresh clone: `git clone → cd backend → npm install → npm start`
-- [ ] Add video link to README after recording
-- [ ] Tag release: `v1.0-demo`
-
-## 📝 Video Demonstration Script
-
-See **[DEMO_SCRIPT.md](DEMO_SCRIPT.md)** for detailed narration, timing, and step-by-step demonstration plan.
-
-## ⚠️ Important Notes
-
-- **All data is fictional** - no real credentials, API keys, or personal information
-- **Local only** - do not deploy to public internet
-- **Educational purpose** - demonstrates vulnerability for learning
-- **Fixed version included** - shows remediation pattern
-
 ## 📚 References
 
 - [OWASP API Security Top 10 - API3:2019 Excessive Data Exposure](https://owasp.org/API-Security/editions/2019/en/0x11-t3-excessive-data-exposure.html)
